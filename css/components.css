@@ -1,0 +1,112 @@
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    padding:.8rem 1.5rem;
+    background:var(--green);
+    color:white;
+    border-radius:var(--radius);
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--green-dark);
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.card-content{
+    padding:1rem;
+}
+
+.price{
+    color:var(--green-dark);
+    font-weight:bold;
+}
+
+/* FAVORITE BUTTON */
+
+.favorite-btn{
+    background:transparent;
+    border:none;
+    font-size:1.4rem;
+    cursor:pointer;
+    color:#999;
+}
+
+.favorite-btn:active{
+    color:red;
+}
+
+/* PAGINATION */
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin-top:3rem;
+}
+
+.pagination a{
+    padding:.7rem 1rem;
+    background:white;
+    border-radius:8px;
+}
+
+/* FORM */
+
+form{
+    background:white;
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.form-group{
+    margin-bottom:1.5rem;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:1rem;
+    border:2px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+input:valid,
+textarea:valid{
+    border-color:green;
+}
+
+input:invalid,
+textarea:invalid{
+    border-color:red;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+    display:flex;
+    gap:2rem;
+    overflow:auto;
+    scroll-snap-type:x mandatory;
+}
+
+.testimonial-card{
+    min-width:300px;
+    background:white;
+    padding:2rem;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    scroll-snap-align:center;
+}

@@ -1,0 +1,29 @@
+/* CARD HOVER */
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* TESTIMONIAL HOVER */
+
+.testimonial-card:hover{
+    transform:scale(1.05);
+    transition:.3s;
+}
+
+/* SOCIAL ICONS */
+
+.socials a{
+    display:inline-block;
+    transition:.3s;
+}
+
+.socials a:hover{
+    transform:scale(1.2);
+}
+
+/* BUTTON */
+
+.btn{
+    transition:.3s;
+}
