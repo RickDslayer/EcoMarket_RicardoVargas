@@ -1,8 +1,8 @@
 /* HEADER */
 
 header{
-    background:var(--white);
-    box-shadow:var(--shadow);
+    background:#ffffff;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
     position:sticky;
     top:0;
     z-index:100;
@@ -15,26 +15,41 @@ header{
     padding:1rem 0;
 }
 
+.img_logo{
+    width: max-content;
+}
+
 .logo{
     font-size:1.8rem;
     font-weight:bold;
-    color:var(--green-dark);
+    color:#27ae60;
 }
 
 .nav-links{
     display:flex;
     gap:1.5rem;
+    list-style: none;
 }
 
 .nav-links a:hover{
-    color:var(--green);
+    color:#2ecc71;
 }
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 
 /* HERO */
 
 .hero{
     height:90vh;
-    background:url('../img/hero/hero.jpg') center/cover no-repeat;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -44,8 +59,8 @@ header{
 
 .hero-content{
     background:rgba(0,0,0,.5);
-    padding:2rem;
-    border-radius:var(--radius);
+    padding:2vh;
+    border-radius: 12px;
 }
 
 /* GRID */
@@ -53,12 +68,33 @@ header{
 .products-grid{
     display:grid;
     grid-template-columns:repeat(1,1fr);
-    gap:2rem;
+    gap:1vh;
 }
 
-@media(min-width:768px){
+@media(max-width:768px){
     .products-grid{
         grid-template-columns:repeat(2,1fr);
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        border-color: #27ae60;
+        border: 2px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
     }
 }
 
@@ -71,14 +107,14 @@ header{
 /* FOOTER */
 
 footer{
-    background:var(--green-dark);
+    background: #27ae60;
     color:white;
     padding:2rem 0;
 }
 
 .footer-content{
     display:grid;
-    gap:2rem;
+    gap:1vh;
     text-align:center;
 }
 
@@ -93,14 +129,14 @@ footer{
 .catalog-layout{
     display:grid;
     grid-template-columns:1fr;
-    gap:2rem;
+    gap:2vh;
 }
 
 .sidebar{
     background:white;
     padding:1rem;
-    border-radius:var(--radius);
-    position:sticky;
+    border-radius: 12px;
+    position:static;
     top:100px;
     height:max-content;
 }

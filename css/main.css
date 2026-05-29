@@ -5,20 +5,9 @@
     box-sizing:border-box;
 }
 
-:root{
-    --green:#2ecc71;
-    --green-dark:#27ae60;
-    --beige:#f5f5dc;
-    --white:#ffffff;
-    --gray:#555;
-    --light:#f9f9f9;
-    --shadow:0 4px 10px rgba(0,0,0,.1);
-    --radius:12px;
-}
-
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:var(--light);
+    background:#f9f9f9;
     color:#333;
     line-height:1.6;
 }
@@ -39,12 +28,12 @@ ul{
 
 .container{
     width:90%;
-    max-width:1200px;
+    max-width:120vh;
     margin:auto;
 }
 
 .section{
-    padding:4rem 0;
+    padding:4vh 0;
 }
 
 .title{
