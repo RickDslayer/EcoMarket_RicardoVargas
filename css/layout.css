@@ -13,6 +13,30 @@ header{
     padding:1rem 0;
 }
 
+.catalog-layout{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2rem;
+}
+
+.sidebar{
+    background:white;
+    padding:1rem;
+    border-radius: 12px;
+    height:max-content;
+}
+
+.sidebar label{
+    display:block;
+    padding:8px 12px;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.sidebar label:hover{
+    background:#f0f0f0;
+}
+
 .img_logo{
     width:max-content;
 }
@@ -73,6 +97,14 @@ header{
         box-shadow:none;
     }
 
+    .catalog-layout{
+        grid-template-columns:250px 1fr;
+    }
+    .sidebar{
+        position:sticky;
+        top:100px;
+    }
+    
 }
 
 .hero{
@@ -102,6 +134,10 @@ header{
     .products-grid{
         grid-template-columns:repeat(2,1fr);
     }
+    .sidebar{
+        position:sticky;
+        top:100px;
+    }
 
 }
 
@@ -109,6 +145,10 @@ header{
 
     .products-grid{
         grid-template-columns:repeat(4,1fr);
+    }
+    .sidebar{
+        position:sticky;
+        top:100px;
     }
 
 }
@@ -130,5 +170,8 @@ footer{
     .footer-content{
         grid-template-columns:repeat(3,1fr);
     }
-
+    .sidebar{
+        position:sticky;
+        top:100px;
+    }
 }

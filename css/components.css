@@ -133,3 +133,44 @@ textarea:invalid{
     }
 
 }
+
+input[name="filtro"]{
+    position:absolute;
+    left:-9999px;
+}
+
+#todos:checked ~ .catalog-layout .card{
+    display:block;
+}
+
+#hogar-filter:checked ~ .catalog-layout .card{
+    display:none;
+}
+
+#hogar-filter:checked ~ .catalog-layout .hogar{
+    display:block;
+}
+
+#moda-filter:checked ~ .catalog-layout .card{
+    display:none;
+}
+
+#moda-filter:checked ~ .catalog-layout .moda{
+    display:block;
+}
+
+#cuidado-filter:checked ~ .catalog-layout .card{
+    display:none;
+}
+
+#cuidado-filter:checked ~ .catalog-layout .cuidado_personal{
+    display:block;
+}
+
+#alimentos-filter:checked ~ .catalog-layout .card{
+    display:none;
+}
+
+#alimentos-filter:checked ~ .catalog-layout .alimentos{
+    display:block;
+}
